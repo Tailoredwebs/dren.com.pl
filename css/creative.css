@@ -9585,7 +9585,11 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 6.5rem 0;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 #services .icon {
@@ -9602,6 +9606,10 @@ hr.light {
 #about .img-thumbnail {
   border: 0 none;
   padding: 0;
+}
+
+#contact .address-info {
+  padding-top: 1rem;
 }
 
 #mainNav {
