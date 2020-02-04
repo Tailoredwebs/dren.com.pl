@@ -6,6 +6,7 @@ const del = require("del");
 const gulp = require("gulp");
 const merge = require("merge-stream");
 const sass = require("gulp-sass");
+const prefix = require('gulp-autoprefixer');
 
 // BrowserSync
 function browserSync(done) {
@@ -48,7 +49,8 @@ function modules() {
 
 // Compile sass into CSS & auto-inject into browsers
 function compileSass(done) {
-  gulp.src('scss/main.scss')
+  gulp.src('scss/main.scss', {sourcemaps: true, style: 'compact'})
+  .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest('css'));
  done();
