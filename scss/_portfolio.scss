@@ -58,7 +58,7 @@
       border-radius: 100%;
       line-height: 30px;
       color: #fff;
-      background-color: #999;
+      background-color: $blue;
       transition: all 0.25s ease;
       &.active, &:hover {
         margin: 0 2px;
