@@ -1,5 +1,10 @@
 // Styling for the portfolio section
 #portfolio {
+  .img-gallery {
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .container-fluid {
     max-width: 1920px;
     .portfolio-box {
