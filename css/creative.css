@@ -9675,7 +9675,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background: linear-gradient(to bottom, rgba(79, 66, 57, 0.8) 0%, rgba(79, 66, 57, 0.8) 100%), url("../img/dren-header.jpg");
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
