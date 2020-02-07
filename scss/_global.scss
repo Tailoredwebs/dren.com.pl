@@ -1,16 +1,17 @@
 // Global styling for this template
+
 body,
 html {
   width: 100%;
   height: 100%;
 }
-
 // Typography
+
 .text-white-75 {
   color: fade-out($white, .25);
 }
-
 // Custom horizontal rules
+
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
@@ -20,8 +21,8 @@ hr.divider {
 hr.light {
   border-color: $white;
 }
-
 // Button restyling
+
 .btn {
   font-family: $font-family-sans-serif;
 }
@@ -34,10 +35,14 @@ hr.light {
   border: none;
   border-radius: 10rem;
 }
-
 // Page section padding
+
 .page-section {
   padding: 6.5rem 0;
+
+  &-contact {
+    padding: 6.5rem 0 0;
+  }
 }
 
 .no-padding {
@@ -45,14 +50,60 @@ hr.light {
 }
 
 #services {
+  .row {
+    min-height: 50vh;
+  }
+
   .icon {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  background-size: cover;
-}
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+  }
+
   .icon-pipe {
-    background-image: url('../img/icons/pipe-icon.svg');
+    background-image: url("../img/icons/pipe-icon.svg");
+  }
+
+  .card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    @media (max-width: 991px) {
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    @media (min-width: 992px) {
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      }
+    }
+  }
+}
+
+#realizations {
+  @media (max-width: 991px) {
+    .container {
+      max-width: 98%;
+    }
+  }
+
+  .map-container {
+    width: 100%;
+
+    iframe {
+      width: 100%;
+      display: block;
+      pointer-events: none;
+      position: relative;
+      /* IE needs a position other than static */
+    }
+
+    iframe.clicked {
+      pointer-events: auto;
+    }
   }
 }
 
@@ -64,9 +115,30 @@ hr.light {
 }
 
 #contact {
-  .address-info {
-    padding-top: 1rem;
+  .row {
+    min-height: 60vh;
+  }
+
+  .card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    @media (max-width: 991px) {
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    @media (min-width: 992px) {
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      }
+    }
+  }
+
+  .bg-primary {
     a {
+      color: white;
     }
   }
 }

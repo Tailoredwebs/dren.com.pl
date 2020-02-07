@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 30)
+          scrollTop: (target.offset().top - 70)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -54,5 +54,28 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+
+  //no scroll map iframe
+  $('.map-container')
+    .click(function() {
+      $(this).find('iframe').addClass('clicked')
+    })
+    .mouseleave(function() {
+      $(this).find('iframe').removeClass('clicked')
+    });
+
+    $('.hover-effect').hover(
+      function() {
+        $(this).animate({
+          marginTop: '-=1%',
+        }, 200);
+      },
+
+      function() {
+        $(this).animate({
+          marginTop: '0%',
+        }, 200);
+      }
+    );
 
 })(jQuery); // End of use strict

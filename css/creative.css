@@ -9588,8 +9588,16 @@ hr.light {
   padding: 6.5rem 0;
 }
 
+.page-section-contact {
+  padding: 6.5rem 0 0;
+}
+
 .no-padding {
   padding: 0;
+}
+
+#services .row {
+  min-height: 50vh;
 }
 
 #services .icon {
@@ -9603,13 +9611,83 @@ hr.light {
   background-image: url("../img/icons/pipe-icon.svg");
 }
 
+#services .card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  #services .card {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
+
+@media (min-width: 992px) {
+  #services .card {
+    cursor: pointer;
+  }
+  #services .card:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
+
+@media (max-width: 991px) {
+  #realizations .container {
+    max-width: 98%;
+  }
+}
+
+#realizations .map-container {
+  width: 100%;
+}
+
+#realizations .map-container iframe {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative;
+  /* IE needs a position other than static */
+}
+
+#realizations .map-container iframe.clicked {
+  pointer-events: auto;
+}
+
 #about .img-thumbnail {
   border: 0 none;
   padding: 0;
 }
 
-#contact .address-info {
-  padding-top: 1rem;
+#contact .row {
+  min-height: 60vh;
+}
+
+#contact .card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  #contact .card {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
+
+@media (min-width: 992px) {
+  #contact .card {
+    cursor: pointer;
+  }
+  #contact .card:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
+
+#contact .bg-primary a {
+  color: white;
 }
 
 #mainNav {
