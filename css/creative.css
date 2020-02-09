@@ -9862,3 +9862,39 @@ header.masthead h1 {
   height: 30px;
   background-color: #337ab7;
 }
+
+#portfolio2 .carousel-inner .carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio2 .carousel-thumbnails .carousel-indicators {
+  margin-bottom: -4.69rem;
+  position: absolute;
+}
+
+#portfolio2 .carousel-thumbnails .carousel-indicators li {
+  height: auto;
+  width: 6.25rem;
+  max-width: 6.25rem;
+  border: none;
+}
+
+#portfolio2 .carousel-thumbnails .carousel-indicators img {
+  max-width: 6.25rem;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+
+#portfolio2 .carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+#portfolio2 .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
