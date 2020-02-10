@@ -9616,21 +9616,7 @@ hr.light {
   float: none;
   margin-bottom: 10px;
   padding: 10px;
-}
-
-@media (max-width: 991px) {
-  #services .card {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  }
-}
-
-@media (min-width: 992px) {
-  #services .card {
-    cursor: pointer;
-  }
-  #services .card:hover {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  }
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 @media (max-width: 991px) {
@@ -9669,24 +9655,10 @@ hr.light {
   float: none;
   margin-bottom: 10px;
   padding: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-@media (max-width: 991px) {
-  #contact .card {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  }
-}
-
-@media (min-width: 992px) {
-  #contact .card {
-    cursor: pointer;
-  }
-  #contact .card:hover {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  }
-}
-
-#contact .bg-primary a {
+.bg-primary a {
   color: white;
 }
 
@@ -9760,7 +9732,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom, rgba(79, 66, 57, 0.8) 0%, rgba(79, 66, 57, 0.8) 100%), url("../img/dren-header.jpg");
+  background: linear-gradient(to bottom, rgba(79, 66, 57, 0.5) 0%, rgba(79, 66, 57, 0.5) 100%), url("../img/dren-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -9869,14 +9841,14 @@ header.masthead h1 {
 }
 
 #portfolio2 .carousel-thumbnails .carousel-indicators {
-  margin-bottom: -4.69rem;
+  margin-bottom: -5.69rem;
   position: absolute;
 }
 
 #portfolio2 .carousel-thumbnails .carousel-indicators li {
   height: auto;
-  width: 6.25rem;
-  max-width: 6.25rem;
+  width: 5.25rem;
+  max-width: 5.25rem;
   border: none;
 }
 
@@ -9887,14 +9859,26 @@ header.masthead h1 {
   display: block;
 }
 
-#portfolio2 .carousel-control-next-icon:after {
+#portfolio2 .carousel-control-next-icon1:after {
   content: '>';
   font-size: 55px;
   color: black;
 }
 
-#portfolio2 .carousel-control-prev-icon:after {
+@media (max-width: 991px) {
+  #portfolio2 .carousel-control-next-icon1:after {
+    color: white;
+  }
+}
+
+#portfolio2 .carousel-control-prev-icon1:after {
   content: '<';
   font-size: 55px;
   color: black;
+}
+
+@media (max-width: 991px) {
+  #portfolio2 .carousel-control-prev-icon1:after {
+    color: white;
+  }
 }

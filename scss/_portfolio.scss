@@ -81,20 +81,18 @@
     .carousel-item {
       display: flex;
       justify-content: center;
-
-      .gallery-image {}
     }
   }
 
   .carousel-thumbnails {
     .carousel-indicators {
-      margin-bottom: -4.69rem;
+      margin-bottom: -5.69rem;
       position: absolute;
 
       li {
         height: auto;
-        width: 6.25rem;
-        max-width: 6.25rem;
+        width: 5.25rem;
+        max-width: 5.25rem;
         border: none;
       }
 
@@ -108,15 +106,21 @@
   }
 
 
-  .carousel-control-next-icon:after {
+  .carousel-control-next-icon1:after {
     content: '>';
     font-size: 55px;
     color: black;
+    @media (max-width: 991px) {
+      color: white;
+    }
   }
 
-  .carousel-control-prev-icon:after {
+  .carousel-control-prev-icon1:after {
     content: '<';
     font-size: 55px;
     color: black;
+    @media (max-width: 991px) {
+      color: white;
+    }
   }
 }

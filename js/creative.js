@@ -64,18 +64,4 @@
       $(this).find('iframe').removeClass('clicked')
     });
 
-    $('.hover-effect').hover(
-      function() {
-        $(this).animate({
-          marginTop: '-=1%',
-        }, 200);
-      },
-
-      function() {
-        $(this).animate({
-          marginTop: '0%',
-        }, 200);
-      }
-    );
-
 })(jQuery); // End of use strict

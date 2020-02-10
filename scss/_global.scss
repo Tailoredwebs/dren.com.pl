@@ -70,16 +70,7 @@ hr.light {
     float: none;
     margin-bottom: 10px;
     padding: 10px;
-    @media (max-width: 991px) {
-      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    }
-    @media (min-width: 992px) {
-      cursor: pointer;
-
-      &:hover {
-        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-      }
-    }
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
 }
 
@@ -124,21 +115,12 @@ hr.light {
     float: none;
     margin-bottom: 10px;
     padding: 10px;
-    @media (max-width: 991px) {
-      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    }
-    @media (min-width: 992px) {
-      cursor: pointer;
-
-      &:hover {
-        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-      }
-    }
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
+}
 
-  .bg-primary {
-    a {
-      color: white;
-    }
+.bg-primary {
+  a {
+    color: white;
   }
 }
