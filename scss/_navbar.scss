@@ -12,8 +12,9 @@
         display: block;
         background: url(../img/drenresized.png) center center no-repeat; 
         background-size: cover;
-        min-width: 85px;
-        height: 63px;
+        min-width: 62px;
+        height: 45px;
+        
       }
 
    
@@ -44,6 +45,13 @@
       color: fade-out($white, .3);
       &:hover {
         color: $white;
+      }
+      .logo{
+        display: block;
+        background: url(../img/drenresized.png) center center no-repeat; 
+        background-size: cover;
+        min-width: 85px;
+        height: 63px;
       }
     }
     .navbar-nav {

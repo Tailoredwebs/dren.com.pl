@@ -9678,8 +9678,8 @@ hr.light {
   display: block;
   background: url(../img/drenresized.png) center center no-repeat;
   background-size: cover;
-  min-width: 85px;
-  height: 63px;
+  min-width: 62px;
+  height: 45px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -9708,6 +9708,13 @@ hr.light {
   }
   #mainNav .navbar-brand:hover {
     color: #fff;
+  }
+  #mainNav .navbar-brand .logo {
+    display: block;
+    background: url(../img/drenresized.png) center center no-repeat;
+    background-size: cover;
+    min-width: 85px;
+    height: 63px;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
